@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>index</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#E2F7FF;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=1100" />
+	<link href='https://fonts.googleapis.com/css?family=Coiny&subset=latin' rel='stylesheet' type='text/css'>
+
+
+	<script>
+	var SCENEWIDTH = 920;
+	var SCENEHEIGHT = 600;
+	var BORDERWIDTHLEFT = 20;
+	var BORDERWIDTHRIGHT = 20;
+	var BORDERWIDTHTOP = 20;
+	var BORDERWIDTHBOTTOM = 20;//for debug
+
+	//var PADDLEWIDTH = 100;
+	//var PADDLEHEIGHT = 30;
+	var XPADDLEMIN = 20; // minimum of left side
+	var XPADDLEMAX = SCENEWIDTH; //max of right side of paddle
+	//var XPADDLESTART = (SCENEWIDTH - PADDLE.Width)/2;
+	//DELETE var PADDLE_X;  //current x value of paddle
+	//var PADDLE_Y = 550; //fixed
+	var PADDLE = {X: 400, Y: 550, Width: 100, Height: 30, Velocity: 6, Movable:true};
+	var BALL = {X: 450, Y:150, Theta:270, Diam:20, Velocity:4.5, MaxAngle: 145, MinAngle: 35};
+	var NUMLIVES = 3;
+	var NUMSCENESCLEARED = 0;
+	
+	//var XINCREMENT;  //how much to move the paddle each time interval
+	var LEFTPRESSED; //boolean for one shot logic
+	var RIGHTPRESSED; //boolean for one shot
+	var LEFTTIMER;
+	var RIGHTTIMER;
+	
+//	var BALL_X; //current x coord of ball
+//	var BALL_X_START;
+//	var BALL_Y; //current y coord of ball
+//	var BALL_Y_START;
+//	var BALL_DIAM = 20;
+///	var BALL_VEL = 10;
+	
+	var BRICK_X_START = BORDERWIDTHLEFT;
+	var BRICK_Y_START = BORDERWIDTHTOP;
+	var BRICK_WIDTH = 60;
+	var BRICK_HEIGHT = 25;
+	var BRICK;  //this will be a 2D array keeping track if a brick is there or not
+	var NUMROWSBRICK = 4; //starting at 1
+	var NUMCOLUMNSBRICK = 15; //starting at 1
+	var BRICKSCLEARED = 0;  //for display on the game scene
+
+	</script>	
+	
+	
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="index_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:1100px;height:600px;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="index.hyperesources/index_hype_generated_script.js?42872"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+		<div>Did you escape ?</div>
+		<div>Credits</div>
+		<div>Game over !</div>
+		<div>BALLS
+LEFT</div>
+		<div>0</div>
+		<div>BRICKS
+CLEARED</div>
+		<div>3</div>
+		<div>2</div>
+		<div>1</div>
+		<div></div>
+		<div>Sick of being inside because</div>
+		<div>!!!!!!!! ARGH !!!!!!!!</div>
+		<div>Directions</div>
+		<div>Use the left and right arrow key to control the paddle. Now let's get out of here!!</div>
+		<div>It's time for you to .....</div>
+		<div>of Covid 19 quarantine?</div>
+		<div>BREAK OUT !!</div>
+		<div>Play</div>
+		<div>Play
+again?</div>
+		<div>(Yes!! Because you are stuck inside !!)</div>
+		<div>
+Graphics by Bill Slobotski 
+Javascript code by Bill Slobotski
+
+
+Background music by Bill Slobotski 
+Special thanks to: Saint Paul College 
+Darren Pearson 
+Tester: Amanda Lambrecht 
+Tester: Celeste Mazur 
+
+
+</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
